@@ -97,4 +97,4 @@ We are choosing our final model on 12th epoch which has loss of 59.29
 
 ## 2.2.9 Useful links
 * https://github.com/OlafenwaMoses/ImageAI - Model Training Helper Library
-* (https://albumentations.ai/ - We can use this repo to augment our dataset
+* https://albumentations.ai/ - We can use this repo to augment our dataset
