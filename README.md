@@ -67,6 +67,8 @@ We are training our dataset with batch size 16 and epochs 30 using GPU accelerat
 * loss vs epoch curve (blue: validation, red: train)
    * ![epoch_loss.svg](https://github.com/ankitdexter/object_detection_yolo/blob/main/images/epoch_loss.svg)
 * best epoch to choose will be 12 as there is small gap between train and validation loss 
+* Download model: https://drive.google.com/file/d/1F1WreKNRHfuGKKOBpZAuGOMkovL_zuvz/view?usp=sharing
+* Download json_config: https://drive.google.com/file/d/1IMEslOfszyyePKqy36odXWYnL2ILwqWj/view?usp=sharing
 
 ## 2.2.6 Evaluation of trained model on test dataset(results)
 We are choosing our final model on 12th epoch which has loss of 59.29
