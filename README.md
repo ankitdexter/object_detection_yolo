@@ -47,9 +47,9 @@ Quoting the imagai documentation: "ImageAI is a python library built to empower 
 ## 2.2.2 Converting Annotation file to Desired Format
 * We have to convert the COCO Format annotation to PASCAL-VOC XML format for which we used the notebook convert_annot_to_pascal_voc.ipynb or coco_to_pascal.py
     * COCO Format:
-        * image here
+        * ![coco_format.png](https://github.com/ankitdexter/object_detection_yolo/blob/main/images/coco_format.png)
     * Pascal-VOC Format:
-        * image here
+        * ![pascal_format.png](https://github.com/ankitdexter/object_detection_yolo/blob/main/images/pascal_format.png)
     * Code: Refer notebook `convert_annot_to_pascal_voc.ipynb` or `coco_to_pascal.py`
 
 ## 2.2.3 Train-Test-Validation Split
@@ -65,6 +65,7 @@ We are training our dataset with batch size 16 and epochs 30 using GPU accelerat
 * Code: `train.py`
 * Output: `trianOutput.py`
 * loss vs epoch curve (blue: validation, red: train)
+   * ![epoch_loss.svg](https://github.com/ankitdexter/object_detection_yolo/blob/main/images/epoch_loss.svg)
 * best epoch to choose will be 12 as there is small gap between train and validation loss 
 
 ## 2.2.6 Evaluation of trained model on test dataset(results)
@@ -82,8 +83,18 @@ We are choosing our final model on 12th epoch which has loss of 59.29
 ## 2.2.7 Testing on Images (Visualization)
 * Code: `inference.py`
 * Results: 
+   * ![image_000000046.jpg](https://github.com/ankitdexter/object_detection_yolo/blob/main/images/image_000000046.jpg)
+   * ![image_000000590.jpg](https://github.com/ankitdexter/object_detection_yolo/blob/main/images/image_000000590.jpg)
+   * ![image_000001604.jpg](https://github.com/ankitdexter/object_detection_yolo/blob/main/images/image_000001604.jpg)
+   * ![image_000001904.jpg](https://github.com/ankitdexter/object_detection_yolo/blob/main/images/image_000001904.jpg)
+   * ![image_000001960.jpg](https://github.com/ankitdexter/object_detection_yolo/blob/main/images/image_000001960.jpg)
+   * ![image_000001980.jpg](https://github.com/ankitdexter/object_detection_yolo/blob/main/images/image_000001980.jpg)
 
 ## 2.2.8 Recommendations
 * We can use newer version of YOLO model
 * We can go for augmentations to increase the dataset size by using Albumentations library (https://albumentations.ai/)
 * Try runninng for more epochs and look for model to converge further
+
+## 2.2.9 Useful links
+* https://github.com/OlafenwaMoses/ImageAI - Model Training Helper Library
+* (https://albumentations.ai/ - We can use this repo to augment our dataset
